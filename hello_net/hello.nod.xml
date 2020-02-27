@@ -1,7 +1,7 @@
 <nodes>
     <node id="1" x="-150.0" y="0.0" />
     <node id="2" x="0.0" y="0.0" />
-    <node id="3" x="10.0" y="55.0" function="connector" />
+    <node id="3" x="10.0" y="55.0" />
     <node id="4" x="80.0" y="80.0" />
     <node id="5" x="-30.0" y="-60.0" />
 </nodes>
