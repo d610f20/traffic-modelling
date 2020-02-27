@@ -1,0 +1,16 @@
+<routes>
+    <vType accel="1.0" decel="5.0" id="Car" length="4.0" maxSpeed="100.0" sigma="0.0" />
+    <vType accel="1.0" decel="5.0" id="Bus" vClass="bus" length="7.0" maxSpeed="100.0" sigma="0.0" />
+
+    <route id="route0" edges="1to2 2to3 3to4 4to3 3to2 2to5"/>
+    <route id="route1" edges="4to3 3to2 2to1 1to2 2to5"/>
+    <route id="route2" edges="4to3 3to2 2to5 5to2 2to1"/>
+    <route id="route3" edges="1to2 2to5 5to2 2to3 3to4 4to3 3to2 2to1"/>
+
+    <vehicle depart="1" id="veh0" route="route0" type="Car" />
+    <vehicle depart="1" id="veh1" route="route2" type="Car" />
+    <vehicle depart="10" id="veh5" route="route3" type="Bus" />
+    <vehicle depart="20" id="veh2" route="route1" type="Car" />
+    <vehicle depart="30" id="veh3" route="route0" type="Car" />
+    <vehicle depart="50" id="veh4" route="route2" type="Car" />
+</routes>
