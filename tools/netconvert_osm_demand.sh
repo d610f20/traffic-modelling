@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+# Script to automagically generate SUMO network and demand-files with recommended options
 
 if [[ "$1" =~ --help ]]; then
 	printf "Generates SUMO net-file from OSM network and models demand on that network\nUsage: network_osm_demand.sh <NETWORK.osm> <NETWORK.net.xml> <ROUTE.rou.xml>\n"
