@@ -1,0 +1,7 @@
+<configuration>
+    <input>
+        <net-file value="helloo.net.xml"/>
+        <route-files value="helloo.rou.xml"/>
+        <gui-settings-file value="helloo.settings.xml"/>
+    </input>
+</configuration>
