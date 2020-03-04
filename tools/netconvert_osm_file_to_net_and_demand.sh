@@ -14,7 +14,7 @@ net_input="$1"
 net_output="$2"
 route_output="$3"
 
-printf 'Using $SUMO_HOME: %s\n' "$SUMO_HOME"
+printf "Using $SUMO_HOME: %s\n" "$SUMO_HOME"
 
 recommended_args="--geometry.remove --ramps.guess --roundabouts.guess --junctions.join --tls.guess-signals --tls.discard-simple --tls.join"
 
@@ -23,9 +23,9 @@ printf "##########\nRecommended netconvert args: %s\n##########\n" "$recommended
 printf "Using net in:\t\t%s\nUsing net out:\t\t%s\nUsing route out:\t%s\n" "$net_input" "$net_output" "$route_output"
 
 # Run NETCONVERT
-netconvert --osm-files $net_input -o $net_output $recommended_args
+netconvert --osm-files "$net_input" -o "$net_output" "$recommended_args"
 
 random_trips_args="-e 3600 --fringe-factor 10"
 printf "##########\nRecommended randomTrips args: %s\n##########\n" "$random_trips_args"
 
-$SUMO_HOME/tools/randomTrips.py -n $net_output -r $route_output $random_trips_args
+$SUMO_HOME/tools/randomTrips.py -n "$net_output" -r "$route_output" "$random_trips_args"
