@@ -2,7 +2,7 @@
 # Script to automagically generate SUMO network and demand-files with recommended options from OSM with coordinates
 
 if [[ "$1" =~ --help ]]; then
-	printf "Generates SUMO net-file from OSM network given by coords and models demand on that network\nUsage: network_osm_demand.sh <W,S,E,N> <PREFIX>\n"
+	printf "Generates SUMO net-file from OSM network given by coords and models demand on that network\nUsage: \$script <W,S,E,N> <PREFIX>\n"
 	printf "The coordinates and prefix are inputs. If not set, they will take defaults; Aalborg metro-area\n"
 	exit 0
 fi

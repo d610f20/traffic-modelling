@@ -2,7 +2,7 @@
 # Script to automagically generate SUMO network and demand-files with recommended options
 
 if [[ "$1" =~ --help ]] || [[ $# -le 2 ]]; then
-	printf "Generates SUMO net-file from OSM network and models demand on that network\nUsage: network_osm_demand.sh <NETWORK.osm> <NETWORK.net.xml> <ROUTE.rou.xml>\n"
+	printf "Generates SUMO net-file from OSM network and models demand on that network\nUsage: \$script <NETWORK.osm> <NETWORK.net.xml> <ROUTE.rou.xml>\n"
 	printf "The .osm file is input, .net.xml and rou.xml is output files. If not set, they will take the input network's name\n"
 	exit 0
 fi
