@@ -45,6 +45,7 @@
     <vType id="CityBus" vClass="bus" color="0,116,255"/>
     <route edges="-gneE18 -gneE2 gneE26 gneE35 gneE36 gneE40 -gneE41 -gneE56 gneE55 -gneE53 -gneE52 -gneE50 gneE30 -gneE11 gneE12 gneE13 gneE14 gneE14.37 -gneE18" color="yellow" id="route_0"/>
     <route edges="gneE18 -gneE14 -gneE14.46 -gneE13 -gneE12 gneE11 -gneE30 gneE50 gneE52 gneE53 -gneE55 gneE56 gneE41 -gneE40 -gneE36 -gneE35 -gneE26 gneE2 gneE18" color="yellow" id="route_-0"/>
+    <route edges="-gneE69 -gneE31 -gneE28 gneE11 -gneE30 gneE50 gneE52 gneE53 -gneE55 -gneE54 -gneE64 -gneE60 -gneE58 gneE48 -gneE76 -gneE73 -gneE69" color="yellow" id="route_1"/>
     <flow id="flow_0" type="CityBus" begin="0.00" route="route_0" from="-gneE18" to="-gneE18" departPos="stop" end="3600.00" period="600.00">
         <stop busStop="busStop_-gneE18_0_0" duration="20"/>
         <stop busStop="busStop_gneE35_0_2" duration="20"/>
@@ -53,12 +54,19 @@
         <stop busStop="busStop_-gneE11_0_10" duration="20"/>
         <stop busStop="busStop_gneE13_0_17" duration="20"/>
     </flow>
-    <flow id="flow_1" type="CityBus" begin="0.00" route="route_-0" from="-gneE18" to="-gneE18" departPos="stop" end="3600.00" period="600.00">
+    <flow id="flow_1" type="CityBus" begin="0.00" route="route_-0" from="-gneE18" to="-gneE18" departPos="stop" end="2000.00" period="600.00">
         <stop busStop="busStop_gneE18_0_1" duration="20"/>
         <stop busStop="busStop_-gneE13_0_16" duration="20"/>
         <stop busStop="busStop_gneE11_0_11" duration="20"/>
         <stop busStop="busStop_gneE53_0_7" duration="20"/>
         <stop busStop="busStop_gneE41_0_5" duration="20"/>
         <stop busStop="busStop_-gneE35_0_3" duration="20"/>
+    </flow>
+    <flow id="flow_2" type="CityBus" begin="0.00" route="route_1" from="-gneE69" to="-gneE69" departPos="stop" end="2000.00" period="300.00">
+        <stop busStop="busStop_-gneE69_0_15" duration="20"/>
+        <stop busStop="busStop_gneE11_0_11" duration="20"/>
+        <stop busStop="busStop_gneE53_0_7" duration="20"/>
+        <stop busStop="busStop_-gneE64_0_13" duration="20"/>
+        <stop busStop="busStop_gneE48_0_9" duration="20"/>
     </flow>
 </routes>
