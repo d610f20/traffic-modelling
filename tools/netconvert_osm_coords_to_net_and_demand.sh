@@ -7,8 +7,10 @@ if [[ "$1" =~ --help ]]; then
 	exit 0
 fi
 
-cogi_SUMO_HOME='/home/user/projects/sumo'
-SUMO_HOME=${SUMO_HOME:=$cogi_SUMO_HOME}
+if [ -z "$SUMO_HOME"]; then
+	printf "[ERROR] \$SUMO_HOME is unset!\n"
+	exit 1
+fi
 
 # Use arguments as filenames
 coord_input="$1"

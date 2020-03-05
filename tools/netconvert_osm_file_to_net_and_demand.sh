@@ -7,7 +7,10 @@ if [[ "$1" =~ --help ]] || [[ $# -le 2 ]]; then
 	exit 0
 fi
 
-SUMO_HOME='/home/user/projects/sumo'
+if [ -z "$SUMO_HOME"]; then
+        printf "[ERROR] \$SUMO_HOME is unset!\n"
+        exit 1
+fi
 
 # Use arguments as filenames
 net_input="$1"
