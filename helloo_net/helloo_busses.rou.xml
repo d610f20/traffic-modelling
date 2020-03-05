@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 03/04/20 09:40:07 by Eclipse SUMO netedit Version 1.5.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\MyThings\Programming\uni\traffic-modelling\helloo_net\helloo.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\MyThings\Programming\uni\traffic-modelling\helloo_net\helloo.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <additional-files value="C:\MyThings\Programming\uni\traffic-modelling\helloo_net\helloo.add.xml"/>
+        <route-files value="C:\MyThings\Programming\uni\traffic-modelling\helloo_net\helloo_busses.rou.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="CityBus" vClass="bus" color="0,116,255"/>
+    <route edges="-gneE18 -gneE2 gneE26 gneE35 gneE36 gneE40 -gneE41 -gneE56 gneE55 -gneE53 -gneE52 -gneE50 gneE30 -gneE11 gneE12 gneE13 gneE14 gneE14.37 -gneE18" color="yellow" id="route_0"/>
+    <route edges="gneE18 -gneE14 -gneE14.46 -gneE13 -gneE12 gneE11 -gneE30 gneE50 gneE52 gneE53 -gneE55 gneE56 gneE41 -gneE40 -gneE36 -gneE35 -gneE26 gneE2 gneE18" color="yellow" id="route_-0"/>
+    <flow id="flow_0" type="CityBus" begin="0.00" route="route_0" from="-gneE18" to="-gneE18" departPos="stop" end="3600.00" period="600.00">
+        <stop busStop="busStop_-gneE18_0_0" duration="20"/>
+        <stop busStop="busStop_gneE35_0_2" duration="20"/>
+        <stop busStop="busStop_-gneE41_0_4" duration="20"/>
+        <stop busStop="busStop_-gneE53_0_6" duration="20"/>
+        <stop busStop="busStop_-gneE11_0_10" duration="20"/>
+        <stop busStop="busStop_gneE13_0_17" duration="20"/>
+    </flow>
+    <flow id="flow_1" type="CityBus" begin="0.00" route="route_-0" from="-gneE18" to="-gneE18" departPos="stop" end="3600.00" period="600.00">
+        <stop busStop="busStop_gneE18_0_1" duration="20"/>
+        <stop busStop="busStop_-gneE13_0_16" duration="20"/>
+        <stop busStop="busStop_gneE11_0_11" duration="20"/>
+        <stop busStop="busStop_gneE53_0_7" duration="20"/>
+        <stop busStop="busStop_gneE41_0_5" duration="20"/>
+        <stop busStop="busStop_-gneE35_0_3" duration="20"/>
+    </flow>
+</routes>

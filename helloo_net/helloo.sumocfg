@@ -1,7 +1,8 @@
 <configuration>
     <input>
         <net-file value="helloo.net.xml"/>
-        <route-files value="helloo.rou.xml"/>
+        <route-files value="helloo.rou.xml, helloo_busses.rou.xml"/>
+        <additional-files value="helloo.add.xml"/>
         <gui-settings-file value="helloo.settings.xml"/>
     </input>
 </configuration>

@@ -2,4 +2,4 @@
 
 extension=.exe
 
-"$SUMO_HOME"/bin/sumo-gui$extension -c helloo.sumocfg --demo
+"$SUMO_HOME"/bin/sumo-gui$extension -c helloo.sumocfg
