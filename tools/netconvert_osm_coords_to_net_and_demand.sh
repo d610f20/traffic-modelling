@@ -7,7 +7,8 @@ if [[ "$1" =~ --help ]]; then
 	exit 0
 fi
 
-SUMO_HOME='/home/user/projects/sumo'
+cogi_SUMO_HOME='/home/user/projects/sumo'
+SUMO_HOME=${SUMO_HOME:=$cogi_SUMO_HOME}
 
 # Use arguments as filenames
 coord_input="$1"
@@ -27,7 +28,15 @@ printf "Using SUMO_HOME:\t%s\nUsing coords:\t\t%s\nUsing prefix:\t\t%s\n" "$SUMO
 printf "Running: osmGet.py --bbox %s --prefix %s\n" "$coord_input" "$osm_file_prefix"
 $SUMO_HOME/tools/osmGet.py --bbox "$coord_input" --prefix "$osm_file_prefix"
 
+# recommended netconvert options
+netconvert_options="--geometry.remove,--roundabouts.guess,--ramps.guess,-v,--junctions.join,"
+netconvert_options+="--tls.guess-signals,--tls.discard-simple,--tls.join,--output.original-names,--junctions.corner-detail,"
+netconvert_options+="5,--output.street-names"
+# additional sidewalk and crosswalk guessing
+netconvert_options+="--sidewalks.guess,true,--crossings-guess,true"
+
+
 # osmBuild uses recommended netconvert args by default
 printf "Running: osmBuild.py --osm-file %s --prefix %s\n" "${osm_file_prefix}${osm_file_postfix}" "$osm_file_prefix"
-$SUMO_HOME/tools/osmBuild.py --osm-file "${osm_file_prefix}${osm_file_postfix}" --prefix "$osm_file_prefix"
+$SUMO_HOME/tools/osmBuild.py --osm-file "${osm_file_prefix}${osm_file_postfix}" --prefix "$osm_file_prefix" --pedestrian
 
