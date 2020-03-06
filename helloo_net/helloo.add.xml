@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 03/04/20 15:19:13 by Eclipse SUMO netedit Version 1.5.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\MyThings\Programming\uni\traffic-modelling\helloo_net\helloo.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\MyThings\Programming\uni\traffic-modelling\helloo_net\helloo.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="false"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <additional-files value="C:\MyThings\Programming\uni\traffic-modelling\helloo_net\helloo.add.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="busStop_-gneE11_0_10" lane="-gneE11_1" startPos="23.19" endPos="33.19"/>
+    <busStop id="busStop_-gneE13_0_16" lane="-gneE13_1" startPos="34.65" endPos="44.65"/>
+    <busStop id="busStop_-gneE18_0_0" lane="-gneE18_1" startPos="20.04" endPos="30.04"/>
+    <busStop id="busStop_-gneE35_0_3" lane="-gneE35_1" startPos="18.60" endPos="28.60"/>
+    <busStop id="busStop_-gneE41_0_4" lane="-gneE41_1" startPos="34.33" endPos="44.33"/>
+    <busStop id="busStop_-gneE48_0_8" lane="-gneE48_1" startPos="27.43" endPos="37.43"/>
+    <busStop id="busStop_-gneE53_0_6" lane="-gneE53_1" startPos="12.84" endPos="22.84"/>
+    <busStop id="busStop_-gneE64_0_13" lane="-gneE64_1" startPos="21.78" endPos="31.78"/>
+    <busStop id="busStop_-gneE69_0_15" lane="-gneE69_1" startPos="13.44" endPos="23.44"/>
+    <busStop id="busStop_gneE11_0_11" lane="gneE11_1" startPos="21.10" endPos="31.10"/>
+    <busStop id="busStop_gneE13_0_17" lane="gneE13_1" startPos="28.97" endPos="38.97"/>
+    <busStop id="busStop_gneE18_0_1" lane="gneE18_1" startPos="24.06" endPos="34.06"/>
+    <busStop id="busStop_gneE35_0_2" lane="gneE35_1" startPos="18.39" endPos="28.39"/>
+    <busStop id="busStop_gneE41_0_5" lane="gneE41_1" startPos="29.09" endPos="39.09"/>
+    <busStop id="busStop_gneE48_0_9" lane="gneE48_1" startPos="26.43" endPos="36.43"/>
+    <busStop id="busStop_gneE53_0_7" lane="gneE53_1" startPos="12.97" endPos="22.97"/>
+    <busStop id="busStop_gneE64_0_12" lane="gneE64_1" startPos="22.86" endPos="32.86"/>
+    <busStop id="busStop_gneE69_0_14" lane="gneE69_1" startPos="14.72" endPos="24.72"/>
+</additional>
