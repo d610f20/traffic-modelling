@@ -95,5 +95,6 @@ fun main() {
         20
     ))
 
-    additional.write(File("./foo.add.xml"))
+    File("./out/").mkdirs()
+    additional.write(File("./out/foo.add.xml"))
 }
